@@ -42,7 +42,7 @@ p {
 
 @media (min-width: 1440px) {
   .container {
-    max-width: 1440px !important;
+    max-width: 1464px !important;
   }
 }
 .mt-1 {
@@ -18064,8 +18064,8 @@ header {
   }
 }
 .rb_hero_two .hero_wrapper {
-  margin-top: 200px;
-  height: 800px;
+  margin-top: 210px;
+  height: 780px;
   position: relative;
 }
 @media only screen and (max-width: 1399px) {
@@ -18101,8 +18101,9 @@ header {
 .rb_hero_two .hero_wrapper .rb_content .rb_listing ul li {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
   color: #F7F7F7;
+  opacity: 0.8;
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -18116,7 +18117,7 @@ header {
   }
 }
 .rb_hero_two .hero_wrapper .rb_content .rb_listing ul li:not(:last-child) {
-  padding-bottom: 20px;
+  padding-bottom: 12px;
 }
 @media only screen and (min-width: 0px) and (max-width: 575px) {
   .rb_hero_two .hero_wrapper .rb_content .rb_listing ul li:not(:last-child) {
@@ -18128,8 +18129,10 @@ header {
   height: 1px;
   background: rgba(255, 255, 255, 0.05);
 }
-.rb_hero_two .hero_wrapper .rb_desc {
-  max-width: 485px;
+.rb_hero_two .hero_wrapper .rb_desc.style_1 {
+  max-width: 465px;
+  color: #F7F7F7;
+  opacity: 0.8;
 }
 .rb_hero_two .hero_thumb img {
   width: 712px;
@@ -18147,6 +18150,14 @@ header {
     height: auto;
   }
 }
+.rb_hero_two .rb_btn_wrapper {
+  margin-top: 27px;
+}
+.rb_hero_two .rb_btn_wrapper .rb_btn {
+  border: 1px solid rgba(247, 247, 247, 0.2);
+  background-color: #17304E;
+  font-weight: 500;
+}
 @media only screen and (max-width: 1399px) {
   .rb_hero_two .rb_btn_wrapper .rb_btn {
     padding: 16px 21px;
@@ -18158,11 +18169,28 @@ header {
     padding: 12px 32px;
   }
 }
+.rb_hero_two .rb_btn_wrapper .rb_btn:hover {
+  background-color: #FFC857;
+  color: #0B2545;
+  font-weight: 600;
+}
+.rb_hero_two .rb_btn_wrapper .rb_btn.active {
+  background-color: #FFC857;
+  color: #0B2545;
+  font-weight: 600;
+}
+.rb_hero_two .rb_btn_wrapper .rb_btn.active:hover {
+  background-color: #C2922E;
+}
 
 /*---Hero Two Section End---*/
+.rb_problem {
+  margin-top: 132px;
+}
 .rb_problem .rb_thumb {
   border-radius: 16px;
   overflow: hidden;
+  max-width: 775px;
 }
 .rb_problem .rb_thumb img {
   display: block;
@@ -21801,7 +21829,7 @@ ol {
   display: flex;
   align-items: center;
   justify-content: end;
-  gap: 5px;
+  gap: 10px;
 }
 .btn_wrapper.style_3 .sign_up a {
   color: #FFC857;
@@ -21810,19 +21838,20 @@ ol {
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
-  background-color: inherit;
   height: 48px;
   width: 101px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 0;
+  border-radius: 24px;
+  background-color: transparent;
+  box-shadow: 0px -4px 4px 0px rgba(0, 0, 0, 0.1019607843) inset;
 }
 .btn_wrapper.style_3 .sign_up a:hover {
   color: #0B2545;
-  border-radius: 24px;
   background: #FFC857;
-  box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.1) inset;
+  font-weight: 600;
 }
 @media only screen and (max-width: 1399px) {
   .btn_wrapper.style_3 .sign_up {
@@ -21834,7 +21863,7 @@ ol {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 28px;
   color: #0B2545;
   background: #FFC857;
@@ -21848,9 +21877,7 @@ ol {
   padding: 0;
 }
 .btn_wrapper.style_3 .sign_in a:hover {
-  color: #0B2545;
-  background: #FFC857;
-  box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.1) inset;
+  background: #C2922E;
 }
 
 /*------------------------------------

@@ -103,8 +103,8 @@
         }
     }
     .hero_wrapper{
-        margin-top: 200px;
-        height: 800px;
+        margin-top: 210px;
+        height: 780px;
         position: relative;
         @include xl {
             margin-top: 180px;
@@ -134,9 +134,10 @@
                     li {
                         display: flex;
                         align-items: center;
-                        gap: 16px;
+                        gap: 12px;
                         color: #F7F7F7;
-                        font-family: $font7;
+                        opacity: 0.8;
+                        font-family: $font-inter;
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 400;
@@ -146,7 +147,7 @@
                             font-size: 14px;
                         }                    
                         &:not(:last-child) {
-                            padding-bottom: 20px;
+                            padding-bottom: 12px;
                             @include xs {
                                 padding-bottom: 13px;
                             }
@@ -160,8 +161,10 @@
                 }
             }
         }
-        .rb_desc {
-            max-width: 485px;
+        .rb_desc.style_1 {
+            max-width: 465px;
+            color: #F7F7F7;
+            opacity: 0.8;
         }
     }
     .hero_thumb{
@@ -179,13 +182,33 @@
         }
     }
     .rb_btn_wrapper {
+        margin-top: 27px;
         .rb_btn {
+            border: 1px solid #F7F7F733;
+            background-color: #17304E;
+            font-weight: 500;
             @include xl {
                 padding: 16px 21px;
                 font-size: 14px;
             }
             @include xs {
                 padding: 12px 32px;
+            }
+
+            &:hover{
+                background-color: #FFC857;
+                color: #0B2545;
+                font-weight: 600;
+            }
+
+            &.active{
+                background-color: #FFC857;
+                color: #0B2545;
+                font-weight: 600;
+
+                &:hover{
+                    background-color: #C2922E;
+                }
             }
         }
     }
@@ -194,9 +217,12 @@
 
 // Problem Section Start
 .rb_problem {
+    margin-top: 132px;
+    
     .rb_thumb {
         border-radius: 16px;
         overflow: hidden;
+        max-width: 775px;
         img {
             display: block;
             width: 100%;

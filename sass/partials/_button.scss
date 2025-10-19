@@ -74,7 +74,7 @@
             display: flex;
             align-items: center;
             justify-content: end;
-            gap: 5px;
+            gap: 10px;
             .sign_up {
                 a {
                     color: #FFC857;
@@ -83,18 +83,20 @@
                     font-style: normal;
                     font-weight: 400;
                     line-height: 28px; 
-                    background-color: inherit;
                     height: 48px;
                     width: 101px;
                     display: inline-flex;
                     align-items: center;
                     justify-content: center;
                     padding: 0;
+                    border-radius: 24px;
+                    background-color: transparent;
+                    box-shadow: 0px -4px 4px 0px #0000001A inset;
                     &:hover {
                         color: #0B2545;
-                        border-radius: 24px;
                         background: #FFC857;
-                        box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.10) inset;
+                        font-weight: 600;
+                        
                     }
                 }
                 @include xl {
@@ -107,7 +109,7 @@
                     font-family: $font-inter;
                     font-size: 16px;
                     font-style: normal;
-                    font-weight: 500;
+                    font-weight: 600;
                     line-height: 28px; 
                     color: #0B2545;
                     background: #FFC857;
@@ -120,9 +122,7 @@
                     justify-content: center;
                     padding: 0;
                     &:hover {
-                        color: #0B2545;
-                        background: #FFC857;
-                        box-shadow: 0 -4px 4px 0 rgba(0, 0, 0, 0.10) inset;
+                        background: #C2922E;
                     }
                 }
             }
