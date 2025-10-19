@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #F7F7F7;
+}
+html {
+  scroll-behavior: smooth; }
+a {
+    text-decoration: none;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+ul,
+ol {
+    list-style-type: none;
+}
+.text-right{
+    text-align: right !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+@media (min-width:1440px){
+    .container{
+        max-width: 1440px !important;
+    }
+}
+
+
+@import "mixin";
+@import "variables";
+@import "./partials/header";
+@import "./partials/animation";
+@import "./partials/preloader";
+@import "./partials/back_top";
+@import "./pages/home2.scss";
+@import "./pages/curriculam.scss";
+@import "./pages/email_template.scss";
+@import "./partials/heading";
+@import "./partials/button";
+@import "./partials/mobile-menu";
+@import "./partials/offcanvas";
+
+
+
