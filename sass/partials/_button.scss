@@ -124,6 +124,13 @@
                     &:hover {
                         background: #C2922E;
                     }
+
+                    @include xxs{
+                        font-size: 14px;
+                        width: 84px;
+                        height: 40px;
+
+                    }
                 }
             }
 

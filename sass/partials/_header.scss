@@ -213,8 +213,12 @@ header{
 		height: 90px;
 	}
 	@include sm{
-		padding: 0px 5px;
+		
 		height: 87px;
+	}
+
+	@include xxs{
+		height: 80px;
 	}
 	.header-wrap{
 		height: 90px;
@@ -226,6 +230,9 @@ header{
 		}
 		@include sm{
 			height: 87px;
+		}
+		@include xxs{
+			height: 80px;
 		}
 		
 		.logo{
@@ -260,6 +267,10 @@ header{
 			@include flexbox();
 			align-items: center;
 			gap: 20px;
+
+			@include xxs{
+				gap: 12px;
+			}
 			
 			.offcanvas-bar{
 				background-color: transparent;
@@ -270,8 +281,8 @@ header{
 				span{
 					color: #000;
 					font-size: 16px;
-					width: 40px;
-					height: 40px;
+					width: 44px;
+					height: 44px;
 					display: flex;
 					padding: 10px;
 					justify-content: center;
@@ -280,6 +291,11 @@ header{
 					border-radius: 22px;
 					border: 1px solid rgba(247, 247, 247, 0.20);
 					background: #17304E;
+
+					@include xxs{
+						height: 40px;
+						width: 40px;
+					}
 				}
 			}
 		}
@@ -291,6 +307,10 @@ header{
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
+
+			@include xxs{
+				padding-top: 5px;
+			}
 			.main-menu {
 				ul {
 					margin: 0;

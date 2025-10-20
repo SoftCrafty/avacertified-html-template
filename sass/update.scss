@@ -38,6 +38,13 @@ p {
     }
 }
 
+@media (max-width: 479px){
+    .container{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
 
 @import "mixin";
 @import "variables";
