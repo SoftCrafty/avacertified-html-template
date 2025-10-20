@@ -277,7 +277,7 @@
     .rb_shape {
         position: absolute;
         z-index: -1;
-        top: -37%;
+        top: -39%;
         left: 40.5%;
         @include lg {
             display: none;
@@ -424,10 +424,10 @@
     }
     .rb_card {
         display: flex;
-        padding: 36px 32px;
+        padding: 37px 31px;
         flex-direction: column;
         align-items: flex-start;
-        gap: 32px;
+        gap: 26px;
         border-radius: 16px;
         background: #17304E;
         transition: all 0.4s;
@@ -438,7 +438,7 @@
         .rb_step {
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
             color: #F7F7F7;
             font-family: $font7;
             font-size: 20px;
@@ -481,6 +481,8 @@
         .rb_thumb {
             border-radius: 16px;
             overflow: hidden;
+            margin-top: 11px;
+
             @include md {
                 width: 100%;
             }
@@ -506,6 +508,14 @@
             }
         }
     }
+
+    .rb_btn{
+        border: transparent;
+        &:hover{
+            background: #C2922E;
+            color: #0B2545;
+        }
+    }
 }
 // Step Card End
 
@@ -514,10 +524,10 @@
     background: #F7F7F7;
     .rb_card {
         display: flex !important;
-        padding: 32px;
+        padding: 27px 32px;
         align-items: flex-start;
+        justify-content: space-between;
         gap: 32px;
-        flex: 1 0 0;
         border-radius: 20px;
         border: 1px solid #EFF0F0;
         background: #FFF;
@@ -528,11 +538,15 @@
             padding: 20px;
         }
         .rb_content {
+            flex: 1;
+            min-height: 290px;
+            display: flex;
+            flex-direction: column;
             .rb_listing {
                 ul {
                     display: flex;
                     align-items: center;
-                    gap: 8px;
+                    gap: 6px;
                     padding-bottom: 24px;
                 }
             }
@@ -545,6 +559,7 @@
                 line-height: 36px; 
                 letter-spacing: -0.2px;
                 padding-bottom: 25px;
+                flex: 1;
                 @include xxs {
                     font-size: 18px;
                     line-height: 30px;
@@ -560,6 +575,8 @@
                 display: flex;
                 align-items: center;
                 gap: 16px;
+                margin-top: auto;
+                
                 .rb_info {
                     h3 {
                         color: #000106;
@@ -589,15 +606,23 @@
         .rb_thumb {
             position: relative;
             border-radius: 16px;
+            flex: 1;
+            overflow: hidden;
             .rb_play_icon {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
 
-                a img{
+                a {
+                    height: 64px;
+                    width: 64px;
+                    display: inline-block;
+                    border-radius: 50%;
                     animation: snipper 2s linear infinite;
-                    border-radius: 40px;
+                    img{
+                       object-fit: cover;
+                    }
                 }
                 
             }
@@ -616,13 +641,13 @@
         } 
     }
     .rb_testi_slider .slick-slide {
-        margin: 0 7px; 
+         margin: 0 14px; 
     }
     
 }
 // Testimonial End
 
-// Problem Section Start
+// scholarship Section Start
 .rb_scholarship {
     position: relative;
     .header_area_2 {
@@ -632,8 +657,8 @@
     }
     .rb_shape1 {
         position: absolute;
-        top: -32%;
-        left: 32%;
+        top: -43%;
+        left: 30.5%;
         width: 455px;
         height: 455px;
         transform: rotate(-90deg);
@@ -648,7 +673,7 @@
     .rb_shape2 {
         position: absolute;
         bottom: -40%;
-        right: 1%;
+        right: 0.5%;
         width: 455px;
         height: 455px;
         transform: rotate(-90deg);
@@ -660,21 +685,46 @@
             display: none;
         }
     }
+
+    .scholarship-wrapper{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+
+        @include lg {
+            flex-direction: column;
+        }
+        .scholarship-right{
+            flex: 1 0 0;
+        }
+    }
     .rb_thumb {
         position: relative;
         z-index: 5;
         border-radius: 16px;
         overflow: hidden;
+        max-width: 864px;
+        margin-left: auto;
         img {
             display: block;
             width: 100%;
-            height: 470px;
             object-fit: cover;
             border-radius: 16px;
             @include sm {
                 height: auto;
             }
         }
+    }
+
+    .rb_btn{
+            padding: 16px 8px;
+            font-weight: 500;
+
+            &:hover{
+                background-color: #C2922E;
+                color: #0B2545;
+            }
     }
 
 }
@@ -709,13 +759,13 @@
                     font-size: 20px;
                     font-style: normal;
                     font-weight: 400;
-                    line-height: 32px; /* 160% */
+                    line-height: 36px; /* 160% */
                     letter-spacing: -0.2px;
                     @include xs {
                         font-size: 16px;
                     }                    
                     &:not(:last-child) {
-                        padding-bottom: 20px;
+                        padding-bottom: 22px;
                         @include xs {
                             padding-bottom: 13px;
                         }
@@ -731,6 +781,24 @@
 
     }
     .rb_btn_wrapper {
+        margin-top: 20px;
+
+        .rb_btn{
+            font-weight: 500;
+
+            &:hover{
+                background-color: #FFC857;
+                color: #0B2545;
+            }
+
+            &.first{
+                &:hover{
+                    background-color: #C2922E;
+                    color: #0B2545;
+                    border-color: transparent;
+                }
+            }
+        }
         @include xl {
             .rb_btn {
                 padding: 16px 10px;                
@@ -751,10 +819,12 @@
         z-index: 5;
         border-radius: 16px;
         overflow: hidden;
+        margin-right: 10px;
+        margin-top: 10px;
         img {
             display: block;
             width: 100%;
-            height: 547px;
+            height: 554px;
             object-fit: cover;
             border-radius: 16px;
             @include sm {
@@ -876,7 +946,6 @@
     position: relative;
     overflow: hidden;
     background: #F7F7F7;
-    height: 678px;
     @include flex(column, end, center);
     @include lg {
         height: 580px;
@@ -913,6 +982,7 @@
     .footer_area_widget{
         position: relative;
         z-index: 9;
+        padding-top: 116px;
         @include md{
             padding: 20px 12px 0px 12px;
         }
@@ -987,6 +1057,7 @@
                     border-radius: 12px;
                     padding: 8px 24px;
                     background: #FFF;
+                    margin-top: 10px;
                     @include lg {
                         padding: 18px 24px;
                     }
@@ -1016,7 +1087,8 @@
                 flex-wrap: wrap;
             }
             padding: 0px;
-            gap: 20px;
+            gap: 10px;
+            margin-top: 2px;
             li{
                 a{
                     color: #4A4D56;
@@ -1026,7 +1098,7 @@
                     font-weight: 400;
                     line-height: 28px; /* 175% */
                     letter-spacing: -0.16px;
-                    padding: 10px 18px;
+                    padding: 10px 10px;
                     @include transition(0.4s);
 
                     @include nesthubmax{
@@ -1171,7 +1243,7 @@
 
     .footer_last{
         margin-bottom: 32px;
-        padding: 23px 24px 30px 24px;
+        padding: 32px 24px 30px 24px;
         border-radius: 12px;
         background: #FFF;
         @include flex(row, space-between, center);
@@ -1303,7 +1375,7 @@
         padding: 12px;
         width: fit-content;
         margin: auto;
-        margin-top: 32px;
+        margin-top: 36px;
     
         .left-arrow, .right-arrow{
             position: static;

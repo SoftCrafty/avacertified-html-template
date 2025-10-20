@@ -302,14 +302,14 @@
             nextArrow: `<span class="right-arrow"><i class="fa-solid fa-arrow-right"></i></span>`,
         });
 
-        function testiSlider() {
+        function testiSlider() { //used
             $('.rb_testi_slider').slick({
                 slidesToShow: 2,
                 slidesToScroll: 1,
                 arrows: true,
                 dots: true,
                  appendDots: $('.testi_dots'), 
-                autoplay: true,
+              //  autoplay: true,
                 speed: 3000,
                 autoplaySpeed: 3000,
                 prevArrow: $('.left-arrow'), 

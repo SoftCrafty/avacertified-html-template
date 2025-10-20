@@ -18238,7 +18238,7 @@ header {
 .rb_curriculum .rb_shape {
   position: absolute;
   z-index: -1;
-  top: -37%;
+  top: -39%;
   left: 40.5%;
 }
 @media only screen and (max-width: 1199px) {
@@ -18399,10 +18399,10 @@ header {
 }
 .rb_step_card .rb_card {
   display: flex;
-  padding: 36px 32px;
+  padding: 37px 31px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 32px;
+  gap: 26px;
   border-radius: 16px;
   background: #17304E;
   transition: all 0.4s;
@@ -18415,7 +18415,7 @@ header {
 .rb_step_card .rb_card .rb_step {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   color: #F7F7F7;
   font-family: "Inter", sans-serif;
   font-size: 20px;
@@ -18462,6 +18462,7 @@ header {
 .rb_step_card .rb_card .rb_thumb {
   border-radius: 16px;
   overflow: hidden;
+  margin-top: 11px;
 }
 @media only screen and (max-width: 991px) {
   .rb_step_card .rb_card .rb_thumb {
@@ -18488,16 +18489,23 @@ header {
 .rb_step_card .rb_card:hover .rb_thumb img {
   transform: scale(1.025);
 }
+.rb_step_card .rb_btn {
+  border: transparent;
+}
+.rb_step_card .rb_btn:hover {
+  background: #C2922E;
+  color: #0B2545;
+}
 
 .rb_testimonial {
   background: #F7F7F7;
 }
 .rb_testimonial .rb_card {
   display: flex !important;
-  padding: 32px;
+  padding: 27px 32px;
   align-items: flex-start;
+  justify-content: space-between;
   gap: 32px;
-  flex: 1 0 0;
   border-radius: 20px;
   border: 1px solid #EFF0F0;
   background: #FFF;
@@ -18512,10 +18520,16 @@ header {
     padding: 20px;
   }
 }
+.rb_testimonial .rb_card .rb_content {
+  flex: 1;
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+}
 .rb_testimonial .rb_card .rb_content .rb_listing ul {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   padding-bottom: 24px;
 }
 .rb_testimonial .rb_card .rb_content .rb_desc {
@@ -18527,6 +18541,7 @@ header {
   line-height: 36px;
   letter-spacing: -0.2px;
   padding-bottom: 25px;
+  flex: 1;
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .rb_testimonial .rb_card .rb_content .rb_desc {
@@ -18544,6 +18559,7 @@ header {
   display: flex;
   align-items: center;
   gap: 16px;
+  margin-top: auto;
 }
 .rb_testimonial .rb_card .rb_content .rb_profile .rb_info h3 {
   color: #000106;
@@ -18572,6 +18588,8 @@ header {
 .rb_testimonial .rb_card .rb_thumb {
   position: relative;
   border-radius: 16px;
+  flex: 1;
+  overflow: hidden;
 }
 .rb_testimonial .rb_card .rb_thumb .rb_play_icon {
   position: absolute;
@@ -18579,9 +18597,16 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.rb_testimonial .rb_card .rb_thumb .rb_play_icon a img {
+.rb_testimonial .rb_card .rb_thumb .rb_play_icon a {
+  height: 64px;
+  width: 64px;
+  display: inline-block;
+  border-radius: 50%;
   animation: snipper 2s linear infinite;
-  border-radius: 40px;
+}
+.rb_testimonial .rb_card .rb_thumb .rb_play_icon a img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 @media only screen and (max-width: 1399px) {
   .rb_testimonial .rb_card .rb_thumb {
@@ -18600,7 +18625,7 @@ header {
   }
 }
 .rb_testimonial .rb_testi_slider .slick-slide {
-  margin: 0 7px;
+  margin: 0 14px;
 }
 
 .rb_scholarship {
@@ -18611,8 +18636,8 @@ header {
 }
 .rb_scholarship .rb_shape1 {
   position: absolute;
-  top: -32%;
-  left: 32%;
+  top: -43%;
+  left: 30.5%;
   width: 455px;
   height: 455px;
   transform: rotate(-90deg);
@@ -18629,7 +18654,7 @@ header {
 .rb_scholarship .rb_shape2 {
   position: absolute;
   bottom: -40%;
-  right: 1%;
+  right: 0.5%;
   width: 455px;
   height: 455px;
   transform: rotate(-90deg);
@@ -18643,16 +18668,31 @@ header {
     display: none;
   }
 }
+.rb_scholarship .scholarship-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 1199px) {
+  .rb_scholarship .scholarship-wrapper {
+    flex-direction: column;
+  }
+}
+.rb_scholarship .scholarship-wrapper .scholarship-right {
+  flex: 1 0 0;
+}
 .rb_scholarship .rb_thumb {
   position: relative;
   z-index: 5;
   border-radius: 16px;
   overflow: hidden;
+  max-width: 864px;
+  margin-left: auto;
 }
 .rb_scholarship .rb_thumb img {
   display: block;
   width: 100%;
-  height: 470px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 16px;
@@ -18661,6 +18701,14 @@ header {
   .rb_scholarship .rb_thumb img {
     height: auto;
   }
+}
+.rb_scholarship .rb_btn {
+  padding: 16px 8px;
+  font-weight: 500;
+}
+.rb_scholarship .rb_btn:hover {
+  background-color: #C2922E;
+  color: #0B2545;
 }
 
 .rb_ava_certified {
@@ -18693,7 +18741,7 @@ header {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 32px; /* 160% */
+  line-height: 36px; /* 160% */
   letter-spacing: -0.2px;
 }
 @media only screen and (min-width: 0px) and (max-width: 575px) {
@@ -18702,7 +18750,7 @@ header {
   }
 }
 .rb_ava_certified .rb_content .rb_listing ul li:not(:last-child) {
-  padding-bottom: 20px;
+  padding-bottom: 22px;
 }
 @media only screen and (min-width: 0px) and (max-width: 575px) {
   .rb_ava_certified .rb_content .rb_listing ul li:not(:last-child) {
@@ -18713,6 +18761,21 @@ header {
   width: 520px;
   height: 1px;
   background: rgba(255, 255, 255, 0.05);
+}
+.rb_ava_certified .rb_btn_wrapper {
+  margin-top: 20px;
+}
+.rb_ava_certified .rb_btn_wrapper .rb_btn {
+  font-weight: 500;
+}
+.rb_ava_certified .rb_btn_wrapper .rb_btn:hover {
+  background-color: #FFC857;
+  color: #0B2545;
+}
+.rb_ava_certified .rb_btn_wrapper .rb_btn.first:hover {
+  background-color: #C2922E;
+  color: #0B2545;
+  border-color: transparent;
 }
 @media only screen and (max-width: 1399px) {
   .rb_ava_certified .rb_btn_wrapper .rb_btn {
@@ -18739,11 +18802,13 @@ header {
   z-index: 5;
   border-radius: 16px;
   overflow: hidden;
+  margin-right: 10px;
+  margin-top: 10px;
 }
 .rb_ava_certified .rb_thumb img {
   display: block;
   width: 100%;
-  height: 547px;
+  height: 554px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 16px;
@@ -18886,7 +18951,6 @@ header {
   position: relative;
   overflow: hidden;
   background: #F7F7F7;
-  height: 678px;
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -18939,6 +19003,7 @@ header {
 .footer_two .footer_area_widget {
   position: relative;
   z-index: 9;
+  padding-top: 116px;
 }
 @media only screen and (max-width: 991px) {
   .footer_two .footer_area_widget {
@@ -19038,6 +19103,7 @@ header {
   border-radius: 12px;
   padding: 8px 24px;
   background: #FFF;
+  margin-top: 10px;
 }
 @media only screen and (max-width: 1199px) {
   .footer_two .footer_area_quick_menu .quicklink .header-wrap .main-menu {
@@ -19063,7 +19129,8 @@ header {
 .footer_two .footer_area_quick_menu .quicklink ul {
   margin: 0px;
   padding: 0px;
-  gap: 20px;
+  gap: 10px;
+  margin-top: 2px;
 }
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
   .footer_two .footer_area_quick_menu .quicklink ul {
@@ -19092,7 +19159,7 @@ header {
   font-weight: 400;
   line-height: 28px; /* 175% */
   letter-spacing: -0.16px;
-  padding: 10px 18px;
+  padding: 10px 10px;
   transition: all 0.4s ease;
 }
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
@@ -19236,7 +19303,7 @@ header {
 }
 .footer_two .footer_last {
   margin-bottom: 32px;
-  padding: 23px 24px 30px 24px;
+  padding: 32px 24px 30px 24px;
   border-radius: 12px;
   background: #FFF;
   display: flex;
@@ -19379,7 +19446,7 @@ header {
   width: -moz-fit-content;
   width: fit-content;
   margin: auto;
-  margin-top: 32px;
+  margin-top: 36px;
 }
 .rb_testimonial .slider-controller .left-arrow, .rb_testimonial .slider-controller .right-arrow {
   position: static;
