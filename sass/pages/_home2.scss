@@ -104,7 +104,7 @@
     }
     .hero_wrapper{
         margin-top: 210px;
-        height: 780px;
+        height: 794px;
         position: relative;
         @include xl {
             margin-top: 180px;
@@ -116,7 +116,8 @@
             margin-bottom: 90px;
         }
         .rb_content {
-            margin-top: 20px;
+            margin-top: 25px;
+            margin-right: 17px;
             display: flex;
             padding: 20px 24px;
             flex-direction: column;
@@ -241,11 +242,43 @@
 // Curriculumn Section Start
 .rb_curriculum {
     position: relative;
+
+    .header_area_2 .sub_heading.style_1 h4{
+        backdrop-filter: blur(20px);      
+        color: #3F444B;
+        
+    }
+
+    .heading{
+        h2 {
+            img{
+                margin-top: -15px;
+                margin-right: 7px;
+            }
+        }
+    }
+
+    .curriculumn-wrapper{
+        margin-top: 30px;
+        display: flex;
+        gap: 24px;
+        @include lg {
+            flex-direction: column;
+        }
+
+        .left-content{
+            flex: 1 0 0;
+        }
+        .right-content{
+            flex: 1 0 0;
+        }
+    }
+
     .rb_shape {
         position: absolute;
         z-index: -1;
-        top: -34%;
-        left: 38%;
+        top: -37%;
+        left: 40.5%;
         @include lg {
             display: none;
         }
@@ -309,9 +342,8 @@
                 padding: 12px 32px;
             }
             &:hover {
-                background: #0B2545;
-                color: $white;
-                @include transition(0.4s);
+                background: #C2922E;
+               
             }
         }
     }

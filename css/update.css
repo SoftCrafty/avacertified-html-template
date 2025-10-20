@@ -18065,7 +18065,7 @@ header {
 }
 .rb_hero_two .hero_wrapper {
   margin-top: 210px;
-  height: 780px;
+  height: 794px;
   position: relative;
 }
 @media only screen and (max-width: 1399px) {
@@ -18082,7 +18082,8 @@ header {
   }
 }
 .rb_hero_two .hero_wrapper .rb_content {
-  margin-top: 20px;
+  margin-top: 25px;
+  margin-right: 17px;
   display: flex;
   padding: 20px 24px;
   flex-direction: column;
@@ -18209,11 +18210,36 @@ header {
 .rb_curriculum {
   position: relative;
 }
+.rb_curriculum .header_area_2 .sub_heading.style_1 h4 {
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  color: #3F444B;
+}
+.rb_curriculum .heading h2 img {
+  margin-top: -15px;
+  margin-right: 7px;
+}
+.rb_curriculum .curriculumn-wrapper {
+  margin-top: 30px;
+  display: flex;
+  gap: 24px;
+}
+@media only screen and (max-width: 1199px) {
+  .rb_curriculum .curriculumn-wrapper {
+    flex-direction: column;
+  }
+}
+.rb_curriculum .curriculumn-wrapper .left-content {
+  flex: 1 0 0;
+}
+.rb_curriculum .curriculumn-wrapper .right-content {
+  flex: 1 0 0;
+}
 .rb_curriculum .rb_shape {
   position: absolute;
   z-index: -1;
-  top: -34%;
-  left: 38%;
+  top: -37%;
+  left: 40.5%;
 }
 @media only screen and (max-width: 1199px) {
   .rb_curriculum .rb_shape {
@@ -18285,9 +18311,7 @@ header {
   }
 }
 .rb_curriculum .rb_content .rb_view_btn:hover {
-  background: #0B2545;
-  color: #fff;
-  transition: all 0.4s ease;
+  background: #C2922E;
 }
 .rb_curriculum .rb_thumb {
   border-radius: 16px;
