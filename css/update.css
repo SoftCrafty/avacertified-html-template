@@ -17568,7 +17568,7 @@ header {
   }
 }
 .sticky_top.header-1.style_2 .header-wrap .main-menu ul li a {
-  padding: 26px 24px;
+  padding: 26px 15px;
 }
 @media only screen and (max-width: 1399px) {
   .sticky_top.header-1.style_2 .header-wrap .main-menu ul li a {
