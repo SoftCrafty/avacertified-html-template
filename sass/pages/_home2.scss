@@ -123,6 +123,7 @@
 
         @include xxs{
             margin-top: 127px;
+            margin-bottom: 54px;
         }
         .rb_content {
             margin-top: 25px;
@@ -271,6 +272,28 @@
 // Problem Section Start
 .rb_problem {
     
+    @include xxs{
+        margin-top: 60px !important;
+    }
+
+    .header_area_2 .rb_desc{
+        @include xxs{
+            margin-top: 8px;
+        }
+
+        &.mt-2{
+            margin-top: 8px !important;
+        }
+    }
+    .header_area_2 .heading h2 {
+        br{
+            @include xxs{
+                display: none;
+            }
+        }
+    }
+
+
     
     .rb_thumb {
         border-radius: 16px;
@@ -289,6 +312,10 @@
             max-width: 100%;
             margin-bottom: 25px;
         }
+
+        @include xxs{
+            margin-bottom: 16px;
+        }
         img {
             display: block;
             width: 100%;
@@ -301,6 +328,10 @@
 
             @include lg {
                 height: auto;
+            }
+
+            @include xxs{
+                height: 255px;
             }
         }
     }
@@ -323,6 +354,10 @@
         @include xl {
             margin-top: 10px;
         }
+
+        @include xxs{
+            margin-top: 12px !important;
+        }
         h2 {
             img{
                 margin-top: -15px;
@@ -332,6 +367,11 @@
                     margin-top: -6px;
                     margin-right: 5px;
                     max-width: 32px;
+                }
+                @include xxs{
+                    margin-top: -8px;
+                    margin-right: 4px;
+                    max-width: 28px;
                 }
             }
         }
@@ -345,6 +385,10 @@
             flex-direction: column;
         }
 
+        @include xxs{
+            margin-top: 20px;
+            gap: 20px;
+        }
         .left-content{
             flex: 1 0 0;
         }
@@ -368,6 +412,21 @@
         @include lg {
             display: none;
         }
+
+        @include xxs{
+            display: block;
+            top: -14%;
+            left: 26%;
+            transform: rotate(107deg);
+        }
+
+        img{
+           @include xxs{
+             object-fit: cover;
+             width: 245px;
+           }
+        }
+        
     }
     .rb_content {
         display: flex;
@@ -384,6 +443,11 @@
             padding: 16px;
             height: auto;
         }
+
+        @include xxs{
+            padding: 14px 15px;
+            gap: 20px;
+        }
         .rb_listing {
             ul {
                 li {
@@ -399,13 +463,23 @@
                     letter-spacing: -0.16px;
                     @include xs {
                         font-size: 14px;
-                    }                    
+                    } 
+                    
+                    @include xxs{
+                        align-items: flex-start;
+                    }
                     &:not(:last-child) {
                         padding-bottom: 16px;
                         @include xs {
                             padding-bottom: 13px;
                         }
+
+                        @include xxs{
+                            padding-bottom: 10px;
+                        }
                     }
+
+
                 }
             }
         }
@@ -428,6 +502,10 @@
                 padding: 12px 32px;
                 font-size: 14px;
             }
+
+            @include xxs{
+                font-size: 16px;
+            }
             &:hover {
                 background: #C2922E;
                
@@ -437,6 +515,10 @@
     .rb_thumb {
         border-radius: 16px;
         overflow: hidden;
+
+        @include xxs{
+            margin-right: 4px;
+        }
         img {
             display: block;
             width: 100%;
@@ -445,6 +527,10 @@
             border-radius: 16px;
             @include lg {
                 height: auto;
+            }
+
+            @include xxs{
+                height: 256px;
             }
         }
     }
@@ -455,59 +541,105 @@
 .rb_step_card {
     position: relative;
     background: #0B2545;
-    .rb_shape1 {
-        position: absolute;
-        top: 0;
-        left: 0;
-        img {
-            @include xxxl {
-                width: 70%;
-            }
-            @include xxl {
-                display: none;
-            }
+    overflow: hidden;
+
+    .container{
+        position: relative;
+        z-index: 2;
+    }
+
+    @include xxs{
+        margin-top: 61px !important;
+        padding-bottom: 60px !important;
+        padding-top: 60px !important;
+    }
+
+    .header_area_2 .heading{
+        @include xxs{
+            margin-top: 12px !important;
         }
     }
-    .rb_shape2 {
-        position: absolute;
-        top: 0;
-        right: 0;
-        text-align: end;
-        img {
-            @include xxxl {
-                width: 70%;
-            }
-            @include xxl {
-                display: none;
-            }            
-        }        
+
+    .header_area_2 .sub_heading h4{
+        @include xxs{
+            padding-right: 16px;
+        }
+    }
+
+    .row.mt-10{
+        @include xxs{
+            margin-top: 0px !important;
+           
+        }
+    }
+
+    .rb_shape1, .rb_shape2, .rb_shape3, .rb_shape4{
+       position: absolute;
+       height: 521px;
+       width: 521px;
+       border-radius: 50%;
+       background-color: #17304E;
+
+       @include xl{
+            height: 400px;
+            width: 400px;
+        }
+
+        @include lg {
+            height: 300px;
+            width: 300px;
+        }
+
+        @include sm{
+            height: 250px;
+            width: 250px;
+        }
+         @include xxs{
+            height: 238px;
+            width: 238px;
+       }
+    }
+    .rb_shape1 {
+       left: -50%;
+        top: -5%;
+        transform: translateX(50%);
+     @include sm{
+        display: none;
+     }
+        
+    }
+    .rb_shape2 {       
+         right: -50%;
+        top: -5%;
+        transform: translateX(-50%);
+        @include sm{
+           right: 50%;
+            top: -8%;
+            transform: translateX(50%);
+        }
     }
     .rb_shape3 {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        img {
-            @include xxxl {
-                width: 70%;
-            }
-            @include xxl {
-                display: none;
-            }            
-        }        
+       left: -50%;
+        bottom: -5%;
+        transform: translateX(50%);
+
+        @include sm{
+            display: none;
+        }
+             
     }
     .rb_shape4 {
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        text-align: end;
-        img {
-            @include xxxl {
-                width: 70%;
-            }
-            @include xxl {
-                display: none;
-            }            
-        }        
+        
+        right: -50%;
+        bottom: -5%;
+        transform: translateX(-50%);
+
+        @include sm{
+            right: 50%;
+            bottom: -8%;
+            transform: translateX(50%);
+        }
+            
     }
     .rb_card {
         display: flex;
@@ -525,8 +657,11 @@
         }
         
         @include xxs {
-            padding: 20px 16px;
+            padding: 18px 17px;
+            gap: 15px;
         }
+
+        
         .rb_step {
             display: flex;
             align-items: center;
@@ -595,6 +730,18 @@
                 @include sm {
                     height: auto;
                 }
+
+                @include xxs{
+                    height: 230px;
+                }
+            }
+        }
+
+        &.step-2{
+            .rb_thumb img{
+                @include xxs{
+                    height: 250px;
+                }
             }
         }
         
@@ -615,13 +762,35 @@
             background: #C2922E;
             color: #0B2545;
         }
+
+        @include xxs{
+            font-size: 16px;
+            margin-top: 3px !important; 
+        }
     }
+
+
 }
 // Step Card End
 
 // Testimonial Start
 .rb_testimonial {
     background: #F7F7F7;
+
+    @include xxs{
+        padding-top: 60px !important;
+        padding-bottom: 56px !important;
+    }
+    .header_area_2 .heading h2{
+        @include xxs{
+            margin-top: 11px !important;
+        }
+        br{
+           @include xxs{
+              display: none;
+           }
+       }
+    }
     .rb_card {
         display: flex !important;
         padding: 27px 32px;
@@ -639,7 +808,7 @@
             padding: 24px;
         }
         @include xxs {
-            padding: 20px;
+            padding: 10px 13px;
         }
         .rb_content {
             flex: 1;
@@ -650,12 +819,21 @@
             @include xl{
                 min-height: 220px;
             }
+
+            @include xxs{
+                min-height: 200px;
+            }
+
             .rb_listing {
                 ul {
                     display: flex;
                     align-items: center;
                     gap: 6px;
                     padding-bottom: 24px;
+
+                    @include xxs{
+                        padding-bottom: 13px;
+                    }
                 }
             }
             .rb_desc {
@@ -671,6 +849,8 @@
                 @include xxs {
                     font-size: 18px;
                     line-height: 30px;
+                    letter-spacing: -0.1px;
+                    padding-bottom: 15px;
                 }
 
                 @include onlymd{
@@ -684,6 +864,19 @@
                 align-items: center;
                 gap: 16px;
                 margin-top: auto;
+
+                .rb_img img{  
+                    width: 72px;
+                    height: 72px;                  
+                    flex-shrink: 0;
+                    border-radius: 50%;
+                    object-fit: cover;
+
+                    @include xxs{
+                        width: 64px;
+                        height: 64px;
+                    }
+                }
                 
                 .rb_info {
                     h3 {
@@ -767,6 +960,11 @@
 // scholarship Section Start
 .rb_scholarship {
     position: relative;
+    overflow: hidden;
+
+    @include xxs{
+        padding-top: 60px !important;
+    }
     .header_area_2 {
         .rb_desc {
             max-width: 416px;
@@ -774,7 +972,7 @@
     }
     .rb_shape1 {
         position: absolute;
-        top: -43%;
+        top: -13%;
         left: 30.5%;
         width: 455px;
         height: 455px;
@@ -785,6 +983,14 @@
         background: rgba(255, 200, 87, 0.06);
         @include xxxl {
             display: none;
+        }
+
+        @include xxs{
+            display: block;
+            height: 300px;
+            width: 300px;
+            top: 15%;
+            left: 57%;
         }
     }
     .rb_shape2 {
@@ -800,6 +1006,15 @@
         background: rgba(255, 200, 87, 0.06);
         @include xxxl {
             display: none;
+        }
+
+        @include xxs{
+            display: block;
+            height: 300px;
+            width: 300px;
+            bottom: unset;
+            top: -108px;
+            right: 53%;
         }
     }
 
@@ -819,6 +1034,16 @@
         .scholarship-left{
            @include md{
             align-self: flex-start;
+           }
+
+           .header_area_2 .heading{
+            @include xxs{
+                margin-top: 16px !important;
+            }
+           }
+
+           .rb_desc{
+            padding-top: 15px !important;
            }
         }
     }
@@ -841,6 +1066,10 @@
             @include sm {
                 height: auto;
             }
+
+            @include xxs{
+                height: 235px;
+            }
         }
     }
 
@@ -851,6 +1080,12 @@
             @include xl {
                 padding: 12px 32px;
                 font-size: 14px;
+            }
+
+            @include xxs{
+                font-size: 16px;
+                margin-top: 23px !important;
+                padding: 12px 24px;
             }
 
             &:hover{
@@ -866,6 +1101,26 @@
 .rb_ava_certified {
     position: relative;
     background: #0B2545;
+
+    @include xxs{
+        margin-top: 60px !important;
+        padding-top: 60px !important;
+        padding-bottom: 76px !important;
+    }
+
+    .header_area_2 .heading {
+        margin-top: 1px;
+        h2{
+            @include xxs{
+                margin-top: 0px !important;
+            }
+        }
+    }
+    .header_area_2 .rb_desc.style_1{
+        @include xxs{
+            margin-top: 8px !important;
+        }
+    }
     .rb_content {
         margin-top: 20px;
         display: flex;
@@ -883,6 +1138,10 @@
         @include sm {
             padding: 16px;
             height: auto;
+        }
+
+        @include xxs{
+            padding: 23px 24px;
         }
         .rb_listing {
             width: 100%;
@@ -912,6 +1171,10 @@
                     @include xs {
                         font-size: 16px;
                     }
+
+                    @include xxs{
+                        padding: 16px 0;
+                    }
                     &:first-child {
                         padding-top: 0;
                     }                    
@@ -919,10 +1182,12 @@
                         padding-bottom: 0;
                         border-bottom: none;
                     }
-                    .br {
-                        width: 520px;
-                        height: 1px;
-                        background: rgba(255, 255, 255, 0.05);
+                    
+                    img {
+                        @include xxs{
+                            width: 20px;
+                            height: 20px;
+                        }
                     }
                 }
             }
@@ -936,6 +1201,10 @@
         .rb_btn{
             font-weight: 500;
             padding: 16px 26px;
+
+            @include xxs{
+                font-size: 16px;
+            }
 
             &:hover{
                 background-color: #FFC857;
@@ -974,6 +1243,11 @@
         overflow: hidden;
         margin-right: 10px;
         margin-top: 10px;
+
+        @include xxs{
+            margin-right: 0;
+            margin-top: 0;
+        }
         img {
             display: block;
             width: 100%;
@@ -982,6 +1256,10 @@
             border-radius: 16px;
             @include xxl {
                 height: auto;
+            }
+
+            @include xxs{
+                height: 256px;
             }
         }
     }
@@ -1034,6 +1312,10 @@
             img{
                 display: inline;
                 transition: all 0.3s;
+
+                @include xxs{
+                    max-width: 96px;
+                }
             }
 
             &:hover{
@@ -1124,8 +1406,8 @@
         }
         
         @include xxs {
-            width: 588px;
-            height: 588px;
+            width: 512px;
+            height: 558px;
             top: -41%;
         }
     }
@@ -1162,6 +1444,10 @@
             a {
                 cursor: pointer !important;
                 margin-bottom: 20px;
+
+                @include xxs{
+                    margin-bottom: 15px;
+                }
                 img{
                 width: fit-content;
                 height: 100%;
@@ -1169,7 +1455,8 @@
                 z-index: 100;
                 cursor: pointer;
                     @include xxs {
-                        width: 42%;
+                        width: 175px;
+                         height: 110px;
                     }
                 }
             }
@@ -1222,6 +1509,11 @@
                     }
                     @include xs {
                         padding: 12px 11px;
+                    }
+
+                    @include xxs{
+                        padding: 12px 20px;
+                        margin-top: 1px;
                     }
                     ul {
                         @include xxs {
@@ -1476,6 +1768,10 @@
     .social_area {
         display: flex;
         justify-content: center;
+
+        @include xxs{
+            margin-top: 24px !important;
+        }
         ul{
             @include flex(row, flex-start, center);
             gap: 12px;
@@ -1537,6 +1833,10 @@
         width: fit-content;
         margin: auto;
         margin-top: 36px;
+
+        @include xxs{
+            margin-top: 28px;
+        }
     
         .left-arrow, .right-arrow{
             position: static;
