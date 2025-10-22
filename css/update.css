@@ -21240,6 +21240,12 @@ header {
 }
 .rb_hero_five .rb_thumb {
   position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+}
+.rb_hero_five .rb_thumb img {
+  width: 100%;
 }
 @media only screen and (max-width: 1599px) {
   .rb_hero_five .rb_thumb img {

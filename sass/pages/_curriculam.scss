@@ -1138,7 +1138,11 @@
     background: #0B2545;
     .rb_thumb {
         position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
         img {
+            width: 100%;
             @include xxl {
                 width: 100%;
             }
