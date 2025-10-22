@@ -20954,7 +20954,7 @@ header {
   transform: translateY(-50%);
   pointer-events: none;
 }
-.rb_common_input2 .input_icon_wrap .input_icon2 {
+.rb_common_input2 .input_icon_wrap .input_icon2, .rb_common_input2 .input_icon_wrap .input_icon2_confirm {
   position: absolute;
   top: 72%;
   right: 20px;
