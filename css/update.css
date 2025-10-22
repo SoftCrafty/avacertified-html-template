@@ -19597,7 +19597,6 @@ header {
   border-radius: 12px;
   padding: 8px 24px;
   background: #FFF;
-  margin-top: 10px;
 }
 @media only screen and (max-width: 1199px) {
   .footer_two .footer_area_quick_menu .quicklink .header-wrap .main-menu {
@@ -21421,6 +21420,10 @@ header {
 .rb_common_input2 .form-check label span a {
   color: #0B2545 !important;
   font-weight: 600;
+}
+
+.tutor-login-wrap {
+  max-width: 100% !important;
 }
 
 a {
