@@ -600,18 +600,18 @@
        }
     }
     .rb_shape1 {
-       left: -50%;
-        top: -5%;
-        transform: translateX(50%);
-     @include sm{
-        display: none;
-     }
+        left: 0;
+        top: -25%;
+        transform: translateX(-50%);
+        @include sm{
+            display: none;
+        }
         
     }
     .rb_shape2 {       
-         right: -50%;
-        top: -5%;
-        transform: translateX(-50%);
+        right: 0;
+        top: -25%;
+        transform: translateX(50%);
         @include sm{
            right: 50%;
             top: -8%;
@@ -619,9 +619,9 @@
         }
     }
     .rb_shape3 {
-       left: -50%;
-        bottom: -5%;
-        transform: translateX(50%);
+       left: 0;
+        bottom: -17%;
+        transform: translateX(-50%);
 
         @include sm{
             display: none;
@@ -630,9 +630,9 @@
     }
     .rb_shape4 {
         
-        right: -50%;
-        bottom: -5%;
-        transform: translateX(-50%);
+        right: 0%;
+        bottom: -17%;
+        transform: translateX(50%);
 
         @include sm{
             right: 50%;
