@@ -18265,7 +18265,6 @@ header {
 .rb_hero_two .rb_btn_wrapper .rb_btn:hover {
   background-color: #FFC857;
   color: #0B2545;
-  font-weight: 600;
 }
 .rb_hero_two .rb_btn_wrapper .rb_btn.active {
   background-color: #FFC857;
