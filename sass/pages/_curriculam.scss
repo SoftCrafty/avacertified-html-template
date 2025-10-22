@@ -1267,8 +1267,9 @@
                     line-height: 22px;
                     letter-spacing: -0.28px;
                     a {
-                        color: #3F444B;
+                        color: #3F444B !important;
                         font-weight: 500;
+                        text-decoration: none !important;
                     }
                 }
                 .rb_forgot_password {
@@ -1297,7 +1298,7 @@
 .rb_common_input2 .form-check label{
     font-weight: 500;
     span a {
-       color: #0B2545;
+       color: #0B2545 !important;
        font-weight: 600;
    }
 }

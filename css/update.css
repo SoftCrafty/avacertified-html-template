@@ -21389,8 +21389,9 @@ header {
   letter-spacing: -0.28px;
 }
 .rb_hero_five .hero_wrapper .rb_signIn_card .rb_footer .rb_account a {
-  color: #3F444B;
+  color: #3F444B !important;
   font-weight: 500;
+  text-decoration: none !important;
 }
 .rb_hero_five .hero_wrapper .rb_signIn_card .rb_footer .rb_forgot_password {
   color: #0B2545;
@@ -21412,7 +21413,7 @@ header {
   font-weight: 500;
 }
 .rb_common_input2 .form-check label span a {
-  color: #0B2545;
+  color: #0B2545 !important;
   font-weight: 600;
 }
 
