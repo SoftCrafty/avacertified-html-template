@@ -21389,7 +21389,8 @@ header {
   letter-spacing: -0.28px;
 }
 .rb_hero_five .hero_wrapper .rb_signIn_card .rb_footer .rb_account a {
-  color: #0B2545;
+  color: #3F444B;
+  font-weight: 500;
 }
 .rb_hero_five .hero_wrapper .rb_signIn_card .rb_footer .rb_forgot_password {
   color: #0B2545;
@@ -21400,8 +21401,21 @@ header {
   line-height: 22px;
   letter-spacing: -0.28px;
 }
+.rb_hero_five .hero_wrapper .rb_signIn_card .rb_btn:hover {
+  transform: translateY(-3px);
+  background-color: #C2922E;
+  color: #0B2545;
+}
 
 /*---Hero five Section End---*/
+.rb_common_input2 .form-check label {
+  font-weight: 500;
+}
+.rb_common_input2 .form-check label span a {
+  color: #0B2545;
+  font-weight: 600;
+}
+
 a {
   text-decoration: none;
 }

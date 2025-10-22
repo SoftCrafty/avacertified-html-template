@@ -1267,7 +1267,8 @@
                     line-height: 22px;
                     letter-spacing: -0.28px;
                     a {
-                        color: #0B2545;
+                        color: #3F444B;
+                        font-weight: 500;
                     }
                 }
                 .rb_forgot_password {
@@ -1280,7 +1281,23 @@
                     letter-spacing: -0.28px;
                 }
             }
+
+            .rb_btn{
+                &:hover{
+                    transform: translateY(-3px);
+                    background-color: #C2922E;
+                    color: #0B2545;
+                }
+            }
         }
     }
 }
 /*---Hero five Section End---*/
+
+.rb_common_input2 .form-check label{
+    font-weight: 500;
+    span a {
+       color: #0B2545;
+       font-weight: 600;
+   }
+}
