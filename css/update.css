@@ -6,6 +6,7 @@
 
 body {
   background: #F7F7F7;
+  overflow-x: hidden;
 }
 
 html {
@@ -20280,15 +20281,25 @@ header {
 }
 .rb_hero_four .rb_shape {
   position: absolute;
-  top: 9%;
+  top: 15%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-90deg);
   width: 1116px;
-  height: 1115px;
-  flex-shrink: 0;
-  border-radius: 1116px;
+  height: 1116px;
+  border-radius: 50%;
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 91.26%);
+}
+.rb_hero_four .rb_shape:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
   border: 2px dashed rgb(35, 58, 86);
-  background: linear-gradient(270deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(270deg, rgba(255, 255, 255, 0.4) 0%, rgba(153, 153, 153, 0) 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
 }
 @media only screen and (min-width: 0px) and (max-width: 575px) {
   .rb_hero_four .rb_shape {
@@ -20306,7 +20317,7 @@ header {
 }
 .rb_hero_four .rb_thumb {
   position: absolute;
-  top: 36%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -20338,7 +20349,7 @@ header {
 }
 .rb_hero_four .hero_wrapper {
   margin-top: 200px;
-  height: 700px;
+  padding-bottom: 128px;
   position: relative;
 }
 @media only screen and (max-width: 1399px) {
@@ -20362,7 +20373,9 @@ header {
   }
 }
 .rb_hero_four .hero_wrapper .fix_hero {
-  margin-top: 315px;
+  margin-top: 375px;
+  background-image: linear-gradient(to top, #0B2545 84%, transparent);
+  box-shadow: 0px -20px 100px 13px #0B2545;
 }
 @media only screen and (max-width: 991px) {
   .rb_hero_four .hero_wrapper .fix_hero {
@@ -20379,53 +20392,6 @@ header {
     margin-top: 160px;
   }
 }
-.rb_hero_four .hero_wrapper .rb_content {
-  margin-top: 20px;
-  display: flex;
-  padding: 20px 24px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  align-self: stretch;
-  border-radius: 12px;
-  background: #17304E;
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
-  .rb_hero_four .hero_wrapper .rb_content {
-    padding: 16px;
-    height: auto;
-  }
-}
-.rb_hero_four .hero_wrapper .rb_content .rb_listing ul li {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  color: #F7F7F7;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px; /* 175% */
-  letter-spacing: -0.16px;
-}
-@media only screen and (min-width: 0px) and (max-width: 575px) {
-  .rb_hero_four .hero_wrapper .rb_content .rb_listing ul li {
-    font-size: 14px;
-  }
-}
-.rb_hero_four .hero_wrapper .rb_content .rb_listing ul li:not(:last-child) {
-  padding-bottom: 20px;
-}
-@media only screen and (min-width: 0px) and (max-width: 575px) {
-  .rb_hero_four .hero_wrapper .rb_content .rb_listing ul li:not(:last-child) {
-    padding-bottom: 13px;
-  }
-}
-.rb_hero_four .hero_wrapper .rb_content .rb_listing ul li .br {
-  width: 520px;
-  height: 1px;
-  background: rgba(255, 255, 255, 0.05);
-}
 
 /*---Hero four Section End---*/
 .rb_step_card_two {
@@ -20434,7 +20400,7 @@ header {
 }
 .rb_step_card_two .rb_section_padding {
   display: flex;
-  padding: 40px;
+  padding: 41px;
   align-items: flex-start;
   gap: 36px;
   align-self: stretch;
@@ -20444,6 +20410,9 @@ header {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
 }
+.rb_step_card_two .rb_section_padding .row.g-5 {
+  --bs-gutter-x: 41px;
+}
 .rb_step_card_two .rb_card {
   display: flex;
   flex-direction: column;
@@ -20451,7 +20420,7 @@ header {
   transition: all 0.4s;
 }
 .rb_step_card_two .rb_card .rb_step {
-  margin-bottom: 16px;
+  margin-bottom: 23px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -20516,11 +20485,23 @@ header {
     height: auto;
   }
 }
+.rb_step_card_two .header_area_2 .heading h2 {
+  letter-spacing: -4px;
+}
+
+.rb_btn.dark-effect {
+  font-weight: 500;
+}
+.rb_btn.dark-effect:hover {
+  transform: translateY(-3px);
+  background-color: #C2922E;
+  color: #0B2545;
+}
 
 .rb_common_input {
   position: relative;
 }
-.rb_common_input .form-group label {
+.rb_common_input .form-item label {
   display: block;
   color: #4A4D56;
   font-family: "Inter", sans-serif;
@@ -20529,9 +20510,12 @@ header {
   font-weight: 400;
   line-height: 26px;
   letter-spacing: -0.16px;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 }
-.rb_common_input .form-group label span {
+.rb_common_input .form-item label.space_bottom {
+  margin-top: 5px;
+}
+.rb_common_input .form-item label span {
   color: #3B3B3B;
   font-family: "Inter", sans-serif;
   font-size: 16px;
@@ -20540,14 +20524,14 @@ header {
   line-height: 26px;
   letter-spacing: -0.16px;
 }
-.rb_common_input .form-group input[type=text],
-.rb_common_input .form-group input[type=number],
-.rb_common_input .form-group input[type=tel],
-.rb_common_input .form-group input[type=date],
-.rb_common_input .form-group input[type=time],
-.rb_common_input .form-group input[type=email],
-.rb_common_input .form-group input[type=password],
-.rb_common_input .form-group textarea {
+.rb_common_input .form-item input[type=text],
+.rb_common_input .form-item input[type=number],
+.rb_common_input .form-item input[type=tel],
+.rb_common_input .form-item input[type=date],
+.rb_common_input .form-item input[type=time],
+.rb_common_input .form-item input[type=email],
+.rb_common_input .form-item input[type=password],
+.rb_common_input .form-item textarea {
   width: 100%;
   padding: 14px 18px;
   height: 60px;
@@ -20562,66 +20546,66 @@ header {
   line-height: 26px;
   letter-spacing: -0.16px;
 }
-.rb_common_input .form-group input[type=text]::-moz-placeholder, .rb_common_input .form-group input[type=number]::-moz-placeholder, .rb_common_input .form-group input[type=tel]::-moz-placeholder, .rb_common_input .form-group input[type=date]::-moz-placeholder, .rb_common_input .form-group input[type=time]::-moz-placeholder, .rb_common_input .form-group input[type=email]::-moz-placeholder, .rb_common_input .form-group input[type=password]::-moz-placeholder, .rb_common_input .form-group textarea::-moz-placeholder {
+.rb_common_input .form-item input[type=text]::-moz-placeholder, .rb_common_input .form-item input[type=number]::-moz-placeholder, .rb_common_input .form-item input[type=tel]::-moz-placeholder, .rb_common_input .form-item input[type=date]::-moz-placeholder, .rb_common_input .form-item input[type=time]::-moz-placeholder, .rb_common_input .form-item input[type=email]::-moz-placeholder, .rb_common_input .form-item input[type=password]::-moz-placeholder, .rb_common_input .form-item textarea::-moz-placeholder {
   color: #9A9EAA;
 }
-.rb_common_input .form-group input[type=text]::placeholder,
-.rb_common_input .form-group input[type=number]::placeholder,
-.rb_common_input .form-group input[type=tel]::placeholder,
-.rb_common_input .form-group input[type=date]::placeholder,
-.rb_common_input .form-group input[type=time]::placeholder,
-.rb_common_input .form-group input[type=email]::placeholder,
-.rb_common_input .form-group input[type=password]::placeholder,
-.rb_common_input .form-group textarea::placeholder {
+.rb_common_input .form-item input[type=text]::placeholder,
+.rb_common_input .form-item input[type=number]::placeholder,
+.rb_common_input .form-item input[type=tel]::placeholder,
+.rb_common_input .form-item input[type=date]::placeholder,
+.rb_common_input .form-item input[type=time]::placeholder,
+.rb_common_input .form-item input[type=email]::placeholder,
+.rb_common_input .form-item input[type=password]::placeholder,
+.rb_common_input .form-item textarea::placeholder {
   color: #9A9EAA;
 }
-.rb_common_input .form-group input[type=text]:focus,
-.rb_common_input .form-group input[type=number]:focus,
-.rb_common_input .form-group input[type=tel]:focus,
-.rb_common_input .form-group input[type=date]:focus,
-.rb_common_input .form-group input[type=time]:focus,
-.rb_common_input .form-group input[type=email]:focus,
-.rb_common_input .form-group input[type=password]:focus,
-.rb_common_input .form-group textarea:focus {
+.rb_common_input .form-item input[type=text]:focus,
+.rb_common_input .form-item input[type=number]:focus,
+.rb_common_input .form-item input[type=tel]:focus,
+.rb_common_input .form-item input[type=date]:focus,
+.rb_common_input .form-item input[type=time]:focus,
+.rb_common_input .form-item input[type=email]:focus,
+.rb_common_input .form-item input[type=password]:focus,
+.rb_common_input .form-item textarea:focus {
   outline: none;
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .rb_common_input .form-group input[type=text],
-  .rb_common_input .form-group input[type=number],
-  .rb_common_input .form-group input[type=tel],
-  .rb_common_input .form-group input[type=date],
-  .rb_common_input .form-group input[type=time],
-  .rb_common_input .form-group input[type=email],
-  .rb_common_input .form-group input[type=password],
-  .rb_common_input .form-group textarea {
+  .rb_common_input .form-item input[type=text],
+  .rb_common_input .form-item input[type=number],
+  .rb_common_input .form-item input[type=tel],
+  .rb_common_input .form-item input[type=date],
+  .rb_common_input .form-item input[type=time],
+  .rb_common_input .form-item input[type=email],
+  .rb_common_input .form-item input[type=password],
+  .rb_common_input .form-item textarea {
     height: 46px;
   }
 }
-.rb_common_input .form-group textarea {
+.rb_common_input .form-item textarea {
   height: 166px;
   resize: vertical;
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .rb_common_input .form-group textarea {
+  .rb_common_input .form-item textarea {
     height: 134px;
   }
 }
-.rb_common_input .form-group input[type=date] {
+.rb_common_input .form-item input[type=date] {
   cursor: pointer;
 }
-.rb_common_input .form-group input[type=date]::-webkit-calendar-picker-indicator {
+.rb_common_input .form-item input[type=date]::-webkit-calendar-picker-indicator {
   opacity: 0;
   display: none;
   -webkit-appearance: none;
 }
-.rb_common_input .form-group input[type=date]::-webkit-inner-spin-button, .rb_common_input .form-group input[type=date]::-webkit-clear-button {
+.rb_common_input .form-item input[type=date]::-webkit-inner-spin-button, .rb_common_input .form-item input[type=date]::-webkit-clear-button {
   display: none;
 }
-.rb_common_input .form-group input[type=date]:focus {
+.rb_common_input .form-item input[type=date]:focus {
   outline: none;
 }
-.rb_common_input .form-group .nice-select,
-.rb_common_input .form-group select {
+.rb_common_input .form-item .nice-select,
+.rb_common_input .form-item select {
   width: 100%;
   padding: 14px 20px;
   height: 54px;
@@ -20636,18 +20620,29 @@ header {
   line-height: 26px;
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
-  .rb_common_input .form-group .nice-select,
-  .rb_common_input .form-group select {
+  .rb_common_input .form-item .nice-select,
+  .rb_common_input .form-item select {
     height: 46px;
     padding: 9px 20px;
   }
 }
-.rb_common_input .form-group .nice-select:after {
+.rb_common_input .form-item .nice-select span,
+.rb_common_input .form-item select span {
+  color: #9A9EAA;
+  opacity: 1;
+}
+.rb_common_input .form-item .nice-select .list,
+.rb_common_input .form-item select .list {
+  max-height: 250px;
+  overflow-y: auto;
+}
+.rb_common_input .form-item .nice-select:after {
   width: 9px;
   height: 9px;
   right: 20px;
+  border-color: #3B3B3B;
 }
-.rb_common_input .form-group select:focus {
+.rb_common_input .form-item select:focus {
   outline: none;
 }
 .rb_common_input .input_icon_wrap {
@@ -20930,8 +20925,8 @@ header {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  top: 32%;
-  left: 17%;
+  top: 36%;
+  left: 18%;
   animation: moving 8s linear infinite;
 }
 @media only screen and (max-width: 1699px) {
@@ -20959,8 +20954,8 @@ header {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  top: 13%;
-  right: 19%;
+  top: 15%;
+  right: 18%;
   animation: moving 5s linear infinite;
 }
 @media only screen and (max-width: 1699px) {
@@ -20986,7 +20981,7 @@ header {
 .rb_application_form .rb_application_card {
   display: flex;
   max-width: 712px;
-  padding: 40px;
+  padding: 40px 42px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -20994,6 +20989,7 @@ header {
   border-radius: 20px;
   border: 2px solid #FFF;
   background: #F7F7F7;
+  margin-top: 33px;
 }
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .rb_application_form .rb_application_card {
@@ -21004,6 +21000,26 @@ header {
   .rb_application_form .rb_application_card {
     padding: 20px;
   }
+}
+.rb_application_form .form-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+.rb_application_form .form-item-wrapper .form-item .nice-select {
+  height: 60px;
+}
+
+.rb_circle {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+}
+
+.footer_two.scholarship_footer .footer_area_widget {
+  margin-top: -5px;
 }
 
 .rb_modal_one .rb_fix_padding {
@@ -22153,7 +22169,7 @@ ol {
     margin-top: 10px;
   }
 }
-.header_area_2 .heading h1 {
+.header_area_2 .heading h1, .header_area_2 .heading .application-form-title {
   color: #F7F7F7;
   font-family: "Playfair Display", serif;
   font-size: 64px;
@@ -22164,7 +22180,7 @@ ol {
   transform: translate(0px, 0px) !important;
   opacity: 1 !important;
 }
-.header_area_2 .heading h1 span {
+.header_area_2 .heading h1 span, .header_area_2 .heading .application-form-title span {
   color: #FFC857;
   font-style: italic;
   font-family: "Playfair Display", serif;
@@ -22172,24 +22188,24 @@ ol {
   letter-spacing: -2.5px;
 }
 @media only screen and (max-width: 1599px) {
-  .header_area_2 .heading h1 {
+  .header_area_2 .heading h1, .header_area_2 .heading .application-form-title {
     font-size: 60px;
   }
 }
 @media only screen and (max-width: 1399px) {
-  .header_area_2 .heading h1 {
+  .header_area_2 .heading h1, .header_area_2 .heading .application-form-title {
     font-size: 50px;
     line-height: 60px;
   }
 }
 @media only screen and (max-width: 991px) {
-  .header_area_2 .heading h1 {
+  .header_area_2 .heading h1, .header_area_2 .heading .application-form-title {
     font-size: 38px;
     line-height: 56px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 575px) {
-  .header_area_2 .heading h1 {
+  .header_area_2 .heading h1, .header_area_2 .heading .application-form-title {
     font-size: 36px;
     font-weight: 400;
     line-height: 115%;
