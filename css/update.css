@@ -18425,7 +18425,7 @@ header {
   .rb_curriculum .rb_shape {
     display: block;
     top: -14%;
-    left: 26%;
+    left: 28%;
     transform: rotate(107deg);
   }
 }
@@ -18433,7 +18433,7 @@ header {
   .rb_curriculum .rb_shape img {
     -o-object-fit: cover;
        object-fit: cover;
-    width: 245px;
+    width: 230px;
   }
 }
 .rb_curriculum .rb_content {
@@ -18994,6 +18994,7 @@ header {
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .rb_scholarship {
     padding-top: 60px !important;
+    padding-bottom: 60px !important;
   }
 }
 .rb_scholarship .header_area_2 .rb_desc {
@@ -19001,7 +19002,7 @@ header {
 }
 .rb_scholarship .rb_shape1 {
   position: absolute;
-  top: -13%;
+  top: -11%;
   left: 30.5%;
   width: 455px;
   height: 455px;
@@ -19027,7 +19028,7 @@ header {
 }
 .rb_scholarship .rb_shape2 {
   position: absolute;
-  bottom: -40%;
+  bottom: -10%;
   right: 0.5%;
   width: 455px;
   height: 455px;
@@ -19110,7 +19111,6 @@ header {
   }
 }
 .rb_scholarship .rb_btn {
-  padding: 16px 8px;
   font-weight: 500;
 }
 @media only screen and (max-width: 1399px) {
@@ -19137,7 +19137,6 @@ header {
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .rb_ava_certified {
-    margin-top: 60px !important;
     padding-top: 60px !important;
     padding-bottom: 76px !important;
   }

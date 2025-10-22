@@ -416,14 +416,14 @@
         @include xxs{
             display: block;
             top: -14%;
-            left: 26%;
+            left: 28%;
             transform: rotate(107deg);
         }
 
         img{
            @include xxs{
              object-fit: cover;
-             width: 245px;
+             width: 230px;
            }
         }
         
@@ -964,6 +964,7 @@
 
     @include xxs{
         padding-top: 60px !important;
+        padding-bottom: 60px !important;
     }
     .header_area_2 {
         .rb_desc {
@@ -972,7 +973,7 @@
     }
     .rb_shape1 {
         position: absolute;
-        top: -13%;
+        top: -11%;
         left: 30.5%;
         width: 455px;
         height: 455px;
@@ -995,7 +996,7 @@
     }
     .rb_shape2 {
         position: absolute;
-        bottom: -40%;
+        bottom: -10%;
         right: 0.5%;
         width: 455px;
         height: 455px;
@@ -1074,7 +1075,7 @@
     }
 
     .rb_btn{
-            padding: 16px 8px;
+           
             font-weight: 500;
 
             @include xl {
@@ -1103,7 +1104,7 @@
     background: #0B2545;
 
     @include xxs{
-        margin-top: 60px !important;
+       
         padding-top: 60px !important;
         padding-bottom: 76px !important;
     }
