@@ -236,11 +236,13 @@
                 font-weight: 600;
                 line-height: 115%; 
                 letter-spacing: -2.5px;
-                @include xxl {
-                    br {
-                        display: block;
+                
+                br {
+                    @include xxs{
+                        display: none;
                     }
                 }
+                
                 @include xl {
                     font-size: 50px;
                     line-height: 60px;

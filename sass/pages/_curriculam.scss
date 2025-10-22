@@ -253,6 +253,14 @@
     position: relative;
     overflow: hidden;
     background: #0B2545;
+
+    .for-xxs{
+        display: none !important;
+
+        @include xxs{
+            display: block !important;
+        }
+    }
     .rb_shape {
         position: absolute;
         top: 15%;
@@ -266,7 +274,37 @@
             rgba(255, 255, 255, 0.15) 0%,
             rgba(255, 255, 255, 0) 91.26%
         );
-        //z-index: 1;
+        
+        @include xl{
+            height: 1000px;
+            width: 1000px;
+        }
+        @include lg{
+            height: 900px;
+            width: 900px;
+        }
+        @include md{
+            height: 800px;
+            width: 800px;
+        }
+        @include sm{
+            height: 700px;
+            width: 700px;
+            transform: translate(-50%, -50%) rotate(-5deg);
+            top: 20%;
+        }
+        @include xs{
+            height: 650px;
+            width: 650px;
+            transform: translate(-50%, -50%) rotate(-5deg);
+            top: 20%;
+        }
+
+        @include xxs{
+            height: 593px;
+            width: 593px;
+            top: 17%;
+        }
 
         &:before{
              content: "";
@@ -286,18 +324,12 @@
             -webkit-mask-composite: xor;
             mask-composite: exclude;
             pointer-events: none; 
+
+            @include lg{
+                border: none;
+            }
         }
 
-          @include xs {
-            top: 37%;
-            width: 593px;
-            height: 593px;
-            flex-shrink: 0;
-            border-radius: 593px;
-          }
-          @include xxs {
-            top: 25%;
-          }
     }
     .rb_thumb {
         position: absolute;
@@ -331,7 +363,6 @@
     }
     .hero_wrapper {
         margin-top: 200px;
-        // height: 766px;
         padding-bottom: 128px;
         position: relative;
         @include xl {
@@ -341,26 +372,41 @@
             margin-top: 160px;
         }
         @include xs {
-            height: 557px;
+            padding-bottom: 90px;
         }
-        @include xxs {
-            height: 450px;
+
+        @include xxs{
+            padding-bottom: 60px;
         }
+        
         .fix_hero {
             margin-top: 375px;
             background-image: linear-gradient(to top, #0B2545 84%, transparent);
             box-shadow: 0px -20px 100px 13px #0B2545;
+
+            @include lg{
+                margin-top: 400px;
+            }
             @include md {
                 margin-top: 360px;
             }
             @include xs {
-                margin-top: 300px;
+                margin-top: 250px;
+                box-shadow: none;
+                background-image: none;
             }
             @include xxs {
-                margin-top: 160px;
+                margin-top: 134px;
             }
         }
        
+    }
+
+    .header_area_2 .rb_desc.style_2{
+        @include xxs{
+            max-width: 300px;
+            margin-top: 10px !important;
+        }
     }
 }
 /*---Hero four Section End---*/
@@ -381,8 +427,16 @@
         background: #FFF;
         backdrop-filter: blur(5px);
 
+        @include xxs{
+            padding: 24px 18px;
+        }
+
         .row.g-5{
                 --bs-gutter-x: 41px;
+
+                @include xxs{
+                    --bs-gutter-y: 35px;
+                }
         }
     }
     .rb_card {
@@ -390,6 +444,7 @@
         flex-direction: column;
         align-items: flex-start;
         transition: all 0.4s;
+        height: 100%;
         .rb_step {
             margin-bottom: 23px;
             display: flex;
@@ -405,6 +460,14 @@
             @include xxs {
                 font-size: 16px;
                 line-height: 26px;
+                margin-bottom: 12px;
+            }
+
+            img{
+                @include xxs{
+                    width: 32px;
+                }
+
             }
         }
         h3 {
@@ -416,10 +479,21 @@
             line-height: 44px; 
             letter-spacing: -0.96px;
             margin-bottom: 45px;
-            @include lg {
-                br {
-                    display: none;
+
+            &.step-01{
+                br{
+                    @include xxs{
+                        display: none;
+                    }
                 }
+            }
+                @include lg {
+                
+                font-size: 28px;
+                line-height: 38px;
+            }
+            @include lg {
+                
                 font-size: 25px;
                 line-height: 30px;
             }
@@ -427,11 +501,15 @@
                 font-size: 24px;
                 line-height: 36px;
             }
+            @include xxs{
+                margin-bottom: 20px;
+            }
         }
         .rb_thumb {
             border-radius: 16px;
             overflow: hidden;
             width: 100%;
+            margin-top: auto;
             @include md {
                 width: 100%;
             }
@@ -450,11 +528,19 @@
 
     .header_area_2 .heading h2{
         letter-spacing: -4px;
+
+        @include xxl {
+            letter-spacing: -2px;
+        }
     }
 
 }
 .rb_btn.dark-effect{
     font-weight: 500;
+
+    @include xs{
+        font-size: 16px;
+    }
 
     &:hover{
         transform: translateY(-3px);
@@ -506,7 +592,7 @@
             padding: 14px 18px;
             height: 60px;
             border-radius: 8px;
-            border: none;
+            border: 1px solid #E7E8E9;
             background: $white;
 
             color: #3B3B3B;
@@ -516,6 +602,10 @@
             font-weight: 400;
             line-height: 26px; 
             letter-spacing: -0.16px;
+
+            @include xs{
+                height: 48px;
+            }
             &::placeholder{
                 color: #9A9EAA;
             }
@@ -626,7 +716,7 @@
         select {
             padding-left: 50px !important;
         }
-    } //@@@@@@@@@@
+    } 
 }
 
 .rb_common_input2 {
@@ -811,13 +901,27 @@
         }
     }
 }
-// Input Form End @@@@@@@@@@@
+// Input Form End
 
 
 .rb_application_form {
     position: relative;
     overflow: hidden;
     background: #0B2545;
+
+    @include xxs{
+        padding-top: 15px !important;
+        padding-bottom: 52px !important;
+    }
+
+     .header_area_2 .heading .application-form-title{
+        @include xxs{
+            font-size: 28px;
+            line-height: 42px;
+            font-weight: 500;
+            letter-spacing: -1px;
+        }
+    }
     .rb_shape {
         position: absolute;
         top: 34%;
@@ -914,6 +1018,10 @@
         @include xs {
             padding: 20px;
         }
+
+        @include xxs{
+            margin-top: 18px;
+        }
         
     }
 
@@ -926,7 +1034,16 @@
         .form-item{
             .nice-select{
                 height: 60px ;
+
+                @include xs{
+                    height: 48px;
+                }
             }
+        }
+
+        .rb_btn{
+            padding: 16px 32px !important;
+            margin-top: 8px;
         }
     }
 }
@@ -936,6 +1053,10 @@
     left: 50%;
     top: 0;
     transform: translateX(-50%);
+
+    @include xs{
+       display: none;
+    }
 }
 .footer_two.scholarship_footer {
    .footer_area_widget{

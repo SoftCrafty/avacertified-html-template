@@ -20279,6 +20279,14 @@ header {
   overflow: hidden;
   background: #0B2545;
 }
+.rb_hero_four .for-xxs {
+  display: none !important;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_hero_four .for-xxs {
+    display: block !important;
+  }
+}
 .rb_hero_four .rb_shape {
   position: absolute;
   top: 15%;
@@ -20288,6 +20296,47 @@ header {
   height: 1116px;
   border-radius: 50%;
   background: linear-gradient(270deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 91.26%);
+}
+@media only screen and (max-width: 1399px) {
+  .rb_hero_four .rb_shape {
+    height: 1000px;
+    width: 1000px;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .rb_hero_four .rb_shape {
+    height: 900px;
+    width: 900px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .rb_hero_four .rb_shape {
+    height: 800px;
+    width: 800px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_hero_four .rb_shape {
+    height: 700px;
+    width: 700px;
+    transform: translate(-50%, -50%) rotate(-5deg);
+    top: 20%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_hero_four .rb_shape {
+    height: 650px;
+    width: 650px;
+    transform: translate(-50%, -50%) rotate(-5deg);
+    top: 20%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_hero_four .rb_shape {
+    height: 593px;
+    width: 593px;
+    top: 17%;
+  }
 }
 .rb_hero_four .rb_shape:before {
   content: "";
@@ -20301,18 +20350,9 @@ header {
   mask-composite: exclude;
   pointer-events: none;
 }
-@media only screen and (min-width: 0px) and (max-width: 575px) {
-  .rb_hero_four .rb_shape {
-    top: 37%;
-    width: 593px;
-    height: 593px;
-    flex-shrink: 0;
-    border-radius: 593px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 479px) {
-  .rb_hero_four .rb_shape {
-    top: 25%;
+@media only screen and (max-width: 1199px) {
+  .rb_hero_four .rb_shape:before {
+    border: none;
   }
 }
 .rb_hero_four .rb_thumb {
@@ -20364,18 +20404,23 @@ header {
 }
 @media only screen and (min-width: 0px) and (max-width: 575px) {
   .rb_hero_four .hero_wrapper {
-    height: 557px;
+    padding-bottom: 90px;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .rb_hero_four .hero_wrapper {
-    height: 450px;
+    padding-bottom: 60px;
   }
 }
 .rb_hero_four .hero_wrapper .fix_hero {
   margin-top: 375px;
   background-image: linear-gradient(to top, #0B2545 84%, transparent);
   box-shadow: 0px -20px 100px 13px #0B2545;
+}
+@media only screen and (max-width: 1199px) {
+  .rb_hero_four .hero_wrapper .fix_hero {
+    margin-top: 400px;
+  }
 }
 @media only screen and (max-width: 991px) {
   .rb_hero_four .hero_wrapper .fix_hero {
@@ -20384,12 +20429,20 @@ header {
 }
 @media only screen and (min-width: 0px) and (max-width: 575px) {
   .rb_hero_four .hero_wrapper .fix_hero {
-    margin-top: 300px;
+    margin-top: 250px;
+    box-shadow: none;
+    background-image: none;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .rb_hero_four .hero_wrapper .fix_hero {
-    margin-top: 160px;
+    margin-top: 134px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_hero_four .header_area_2 .rb_desc.style_2 {
+    max-width: 300px;
+    margin-top: 10px !important;
   }
 }
 
@@ -20410,14 +20463,25 @@ header {
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_step_card_two .rb_section_padding {
+    padding: 24px 18px;
+  }
+}
 .rb_step_card_two .rb_section_padding .row.g-5 {
   --bs-gutter-x: 41px;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_step_card_two .rb_section_padding .row.g-5 {
+    --bs-gutter-y: 35px;
+  }
 }
 .rb_step_card_two .rb_card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   transition: all 0.4s;
+  height: 100%;
 }
 .rb_step_card_two .rb_card .rb_step {
   margin-bottom: 23px;
@@ -20436,6 +20500,12 @@ header {
   .rb_step_card_two .rb_card .rb_step {
     font-size: 16px;
     line-height: 26px;
+    margin-bottom: 12px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_step_card_two .rb_card .rb_step img {
+    width: 32px;
   }
 }
 .rb_step_card_two .rb_card h3 {
@@ -20448,13 +20518,21 @@ header {
   letter-spacing: -0.96px;
   margin-bottom: 45px;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_step_card_two .rb_card h3.step-01 br {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  .rb_step_card_two .rb_card h3 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+}
 @media only screen and (max-width: 1199px) {
   .rb_step_card_two .rb_card h3 {
     font-size: 25px;
     line-height: 30px;
-  }
-  .rb_step_card_two .rb_card h3 br {
-    display: none;
   }
 }
 @media only screen and (min-width: 0px) and (max-width: 575px) {
@@ -20463,10 +20541,16 @@ header {
     line-height: 36px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_step_card_two .rb_card h3 {
+    margin-bottom: 20px;
+  }
+}
 .rb_step_card_two .rb_card .rb_thumb {
   border-radius: 16px;
   overflow: hidden;
   width: 100%;
+  margin-top: auto;
 }
 @media only screen and (max-width: 991px) {
   .rb_step_card_two .rb_card .rb_thumb {
@@ -20488,9 +20572,19 @@ header {
 .rb_step_card_two .header_area_2 .heading h2 {
   letter-spacing: -4px;
 }
+@media only screen and (max-width: 1599px) {
+  .rb_step_card_two .header_area_2 .heading h2 {
+    letter-spacing: -2px;
+  }
+}
 
 .rb_btn.dark-effect {
   font-weight: 500;
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_btn.dark-effect {
+    font-size: 16px;
+  }
 }
 .rb_btn.dark-effect:hover {
   transform: translateY(-3px);
@@ -20536,7 +20630,7 @@ header {
   padding: 14px 18px;
   height: 60px;
   border-radius: 8px;
-  border: none;
+  border: 1px solid #E7E8E9;
   background: #fff;
   color: #3B3B3B;
   font-family: "Inter", sans-serif;
@@ -20545,6 +20639,18 @@ header {
   font-weight: 400;
   line-height: 26px;
   letter-spacing: -0.16px;
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_common_input .form-item input[type=text],
+  .rb_common_input .form-item input[type=number],
+  .rb_common_input .form-item input[type=tel],
+  .rb_common_input .form-item input[type=date],
+  .rb_common_input .form-item input[type=time],
+  .rb_common_input .form-item input[type=email],
+  .rb_common_input .form-item input[type=password],
+  .rb_common_input .form-item textarea {
+    height: 48px;
+  }
 }
 .rb_common_input .form-item input[type=text]::-moz-placeholder, .rb_common_input .form-item input[type=number]::-moz-placeholder, .rb_common_input .form-item input[type=tel]::-moz-placeholder, .rb_common_input .form-item input[type=date]::-moz-placeholder, .rb_common_input .form-item input[type=time]::-moz-placeholder, .rb_common_input .form-item input[type=email]::-moz-placeholder, .rb_common_input .form-item input[type=password]::-moz-placeholder, .rb_common_input .form-item textarea::-moz-placeholder {
   color: #9A9EAA;
@@ -20894,6 +21000,20 @@ header {
   overflow: hidden;
   background: #0B2545;
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_application_form {
+    padding-top: 15px !important;
+    padding-bottom: 52px !important;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_application_form .header_area_2 .heading .application-form-title {
+    font-size: 28px;
+    line-height: 42px;
+    font-weight: 500;
+    letter-spacing: -1px;
+  }
+}
 .rb_application_form .rb_shape {
   position: absolute;
   top: 34%;
@@ -21001,6 +21121,11 @@ header {
     padding: 20px;
   }
 }
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_application_form .rb_application_card {
+    margin-top: 18px;
+  }
+}
 .rb_application_form .form-item-wrapper {
   display: flex;
   flex-direction: column;
@@ -21010,12 +21135,26 @@ header {
 .rb_application_form .form-item-wrapper .form-item .nice-select {
   height: 60px;
 }
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_application_form .form-item-wrapper .form-item .nice-select {
+    height: 48px;
+  }
+}
+.rb_application_form .form-item-wrapper .rb_btn {
+  padding: 16px 32px !important;
+  margin-top: 8px;
+}
 
 .rb_circle {
   position: absolute;
   left: 50%;
   top: 0;
   transform: translateX(-50%);
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_circle {
+    display: none;
+  }
 }
 
 .footer_two.scholarship_footer .footer_area_widget {
@@ -22333,9 +22472,9 @@ ol {
   line-height: 115%;
   letter-spacing: -2.5px;
 }
-@media only screen and (max-width: 1599px) {
+@media only screen and (min-width: 0px) and (max-width: 479px) {
   .header_area_2 .heading.style_4 h1 br {
-    display: block;
+    display: none;
   }
 }
 @media only screen and (max-width: 1399px) {
