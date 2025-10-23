@@ -103,9 +103,37 @@
         border-radius: 1324px;
         opacity: 0.06;
         background: #FFF;
-        @include xl {
-            display: none;
+        
+        @include lg{
+            width: 1000px;
+            height: 1000px;
+            top: 36%;
         }
+        @include md{
+            width: 800px;
+            height: 800px;
+            top: 10%;
+            left: -20%;
+        }
+        @include sm{
+            width: 700px;
+            height: 700px;
+            top: 10%;
+            left: -32%;
+        }
+        @include xs{
+            width: 600px;
+            height: 600px;
+            top: 10%;
+            left: -33%;
+        }
+        @include xxs{
+            width: 518px;
+            height: 518px;
+            top: 7%;
+            left: -39%;
+        }
+         
     }
     .hero_wrapper{
         margin-top: 210px;

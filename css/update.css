@@ -18096,9 +18096,43 @@ header {
   opacity: 0.06;
   background: #FFF;
 }
-@media only screen and (max-width: 1399px) {
+@media only screen and (max-width: 1199px) {
   .rb_hero_two .rb_shape {
-    display: none;
+    width: 1000px;
+    height: 1000px;
+    top: 36%;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .rb_hero_two .rb_shape {
+    width: 800px;
+    height: 800px;
+    top: 10%;
+    left: -20%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .rb_hero_two .rb_shape {
+    width: 700px;
+    height: 700px;
+    top: 10%;
+    left: -32%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_hero_two .rb_shape {
+    width: 600px;
+    height: 600px;
+    top: 10%;
+    left: -33%;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .rb_hero_two .rb_shape {
+    width: 518px;
+    height: 518px;
+    top: 7%;
+    left: -39%;
   }
 }
 .rb_hero_two .hero_wrapper {
