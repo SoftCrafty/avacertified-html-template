@@ -18868,7 +18868,7 @@ header {
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .rb_testimonial .rb_card {
-    padding: 10px 13px;
+    padding: 20px;
   }
 }
 .rb_testimonial .rb_card .rb_content {
@@ -19173,6 +19173,11 @@ header {
   .rb_ava_certified {
     padding-top: 60px !important;
     padding-bottom: 76px !important;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_ava_certified .header_area_2 .heading.style_1 h2 {
+    font-weight: 500;
   }
 }
 .rb_ava_certified .header_area_2 .heading {

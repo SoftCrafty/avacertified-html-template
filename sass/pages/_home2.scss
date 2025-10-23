@@ -836,7 +836,7 @@
             padding: 24px;
         }
         @include xxs {
-            padding: 10px 13px;
+            padding: 20px;
         }
         .rb_content {
             flex: 1;
@@ -1136,7 +1136,11 @@
         padding-top: 60px !important;
         padding-bottom: 76px !important;
     }
-
+.header_area_2 .heading.style_1 h2{
+    @include xs{
+        font-weight: 500;
+    }
+}
     .header_area_2 .heading {
         margin-top: 1px;
         h2{
