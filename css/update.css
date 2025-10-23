@@ -19835,7 +19835,7 @@ header {
 }
 .footer_two .footer_last {
   margin-bottom: 32px;
-  padding: 32px 24px 30px 24px;
+  padding: 30px 24px 30px 24px;
   border-radius: 12px;
   background: #FFF;
   display: flex;
@@ -19846,12 +19846,6 @@ header {
   width: 100%;
 }
 @media only screen and (max-width: 991px) {
-  .footer_two .footer_last {
-    margin-bottom: 23px;
-    padding: 20px 15px 24px 15px;
-  }
-}
-@media only screen and (min-width: 0px) and (max-width: 767px) {
   .footer_two .footer_last {
     flex-direction: column;
     gap: 15px;
@@ -19864,7 +19858,7 @@ header {
     flex-direction: column;
     gap: 10px;
     margin-bottom: 15px;
-    padding: 20px 12px 12px 12px;
+    padding: 20px 12px;
   }
 }
 .footer_two .footer_last p {

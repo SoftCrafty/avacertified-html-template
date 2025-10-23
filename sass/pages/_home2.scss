@@ -1723,18 +1723,18 @@
 
     .footer_last{
         margin-bottom: 32px;
-        padding: 32px 24px 30px 24px;
+        padding: 30px 24px 30px 24px;
         border-radius: 12px;
         background: #FFF;
         @include flex(row, space-between, center);
         flex-wrap: nowrap;
         width: 100%;
         @include md {
-            margin-bottom: 23px;
-            padding: 20px 15px 24px 15px;
+            // margin-bottom: 23px;
+            // padding: 20px 15px 24px 15px;
         }
 
-        @include sm {
+        @include md {
             flex-direction: column;
             gap: 15px;
             align-items: center;
@@ -1744,7 +1744,7 @@
             flex-direction: column;
             gap: 10px;
             margin-bottom: 15px;
-            padding: 20px 12px 12px 12px;
+            padding: 20px 12px;
         }
         
         p{
