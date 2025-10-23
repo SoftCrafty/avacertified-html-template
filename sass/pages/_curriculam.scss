@@ -418,7 +418,7 @@
    
     .rb_section_padding {
         display: flex;
-        padding: 41px;
+        padding: 41px 42px;
         align-items: flex-start;
         gap: 36px;
         align-self: stretch;
@@ -478,7 +478,7 @@
             font-weight: 500;
             line-height: 44px; 
             letter-spacing: -0.96px;
-            margin-bottom: 45px;
+            margin-bottom: 50px;
 
             &.step-01{
                 br{

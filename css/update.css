@@ -20451,7 +20451,7 @@ header {
 }
 .rb_step_card_two .rb_section_padding {
   display: flex;
-  padding: 41px;
+  padding: 41px 42px;
   align-items: flex-start;
   gap: 36px;
   align-self: stretch;
@@ -20514,7 +20514,7 @@ header {
   font-weight: 500;
   line-height: 44px;
   letter-spacing: -0.96px;
-  margin-bottom: 45px;
+  margin-bottom: 50px;
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .rb_step_card_two .rb_card h3.step-01 br {
