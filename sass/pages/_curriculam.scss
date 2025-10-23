@@ -1076,6 +1076,19 @@
             padding: 0;
         }
     }
+
+    .rb_btn{
+         @include xs{
+        font-size: 16px;
+        }
+
+        &:hover{
+            transform: translateY(-3px);
+            background-color: #C2922E;
+            color: #0B2545;            
+        }
+    }
+
     .rb_modal_title {
         color: #0B2545;
         text-align: center;

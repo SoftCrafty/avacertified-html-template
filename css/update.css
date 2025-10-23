@@ -17147,11 +17147,6 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-@media only screen and (min-width: 0px) and (max-width: 479px) {
-  .header-1.style_2 .header-wrap {
-    padding-top: 5px;
-  }
-}
 .header-1.style_2 .header-wrap .main-menu ul {
   margin: 0;
   padding: 0;
@@ -21208,6 +21203,16 @@ header {
   .rb_modal_one .rb_fix_padding {
     padding: 0;
   }
+}
+@media only screen and (min-width: 0px) and (max-width: 575px) {
+  .rb_modal_one .rb_btn {
+    font-size: 16px;
+  }
+}
+.rb_modal_one .rb_btn:hover {
+  transform: translateY(-3px);
+  background-color: #C2922E;
+  color: #0B2545;
 }
 .rb_modal_one .rb_modal_title {
   color: #0B2545;
