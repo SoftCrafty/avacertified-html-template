@@ -21004,6 +21004,9 @@ header {
     padding-bottom: 52px !important;
   }
 }
+.rb_application_form #scholarship-application-form {
+  width: 100%;
+}
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .rb_application_form .header_area_2 .heading .application-form-title {
     font-size: 28px;
