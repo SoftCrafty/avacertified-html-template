@@ -22958,12 +22958,15 @@ ol {
   margin-right: 15px;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__close {
-  width: 40px;
-  height: 40px;
+  width: 36px;
+  height: 36px;
   text-align: center;
   line-height: 46px;
   border-radius: 50%;
   background-color: #FFC857;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   z-index: 9;
   cursor: pointer;
