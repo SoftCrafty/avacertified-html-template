@@ -121,8 +121,8 @@
 		color: var(--theme-color);
 	}
   }
-  .mean-container .mean-nav ul li a:last-child {
-	border-bottom: 0;
+  .mean-container .mean-nav ul li:last-child a{
+	border-bottom: none !important;
   }
   .mean-container .mean-nav ul li a:hover {
 	color: var(--theme-color);

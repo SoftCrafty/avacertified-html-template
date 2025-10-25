@@ -17113,7 +17113,7 @@ header {
   background-color: transparent;
   border: none;
 }
-@media (max-width: 1199px) {
+@media (max-width: 991px) {
   .header-1 .header-wrap .header-right .offcanvas-bar {
     display: block !important;
   }
@@ -17180,6 +17180,14 @@ header {
   -moz-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
+}
+.header-1.style_2 .header-wrap .main-menu ul li:last-child {
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  .header-1.style_2 .header-wrap .main-menu ul li:last-child {
+    display: inline-block;
+  }
 }
 @media (max-width: 1599px) {
   .header-1.style_2 .header-wrap .main-menu ul li {
@@ -21466,7 +21474,7 @@ header {
   max-width: 100% !important;
 }
 .tutor-login-wrap .rb_hero_five .hero_wrapper .rb_signIn_card .rb_footer .rb_account a {
-  color: #404A56;
+  color: #404A56 !important;
 }
 
 .rb_common_input2.mt-40 {
@@ -22707,7 +22715,7 @@ ol {
   background: #FFC857;
   font-weight: 600;
 }
-@media only screen and (max-width: 1399px) {
+@media only screen and (max-width: 991px) {
   .btn_wrapper.style_3 .sign_up {
     display: none;
   }
@@ -22852,8 +22860,8 @@ ol {
   color: var(--theme-color);
 }
 
-.mean-container .mean-nav ul li a:last-child {
-  border-bottom: 0;
+.mean-container .mean-nav ul li:last-child a {
+  border-bottom: none !important;
 }
 
 .mean-container .mean-nav ul li a:hover {
@@ -22935,6 +22943,9 @@ ol {
   color: var(--headingfont-color);
   margin-bottom: 20px;
 }
+.offcanvas__wrapper .offcanvas__content .offcanvas__top {
+  margin-bottom: 10px;
+}
 .offcanvas__wrapper .offcanvas__content .theme-btn {
   padding: 15px 28px;
   margin-top: 40px;
@@ -22960,7 +22971,7 @@ ol {
 .offcanvas__wrapper .offcanvas__content .offcanvas__close button {
   background-color: transparent;
   border: none;
-  color: #fff;
+  color: #0B2545;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__close:hover i {
   transform: rotate(90deg);
@@ -22970,35 +22981,69 @@ ol {
   font-size: 16px;
   transition: all 0.3s ease;
 }
+.offcanvas__wrapper .offcanvas__content .offcanvas-btns {
+  margin-top: 200px;
+}
+.offcanvas__wrapper .offcanvas__content .offcanvas-btns .btn_wrapper {
+  justify-content: start;
+}
+.offcanvas__wrapper .offcanvas__content .offcanvas-btns .btn_wrapper .sign_up {
+  display: block;
+}
+.offcanvas__wrapper .offcanvas__content .offcanvas-btns .btn_wrapper .sign_up a {
+  color: #0B2545;
+  background: #FFC857;
+  font-weight: 600;
+}
+.offcanvas__wrapper .offcanvas__content .offcanvas-btns .btn_wrapper .sign_up a:hover {
+  background-color: #C2922E;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .offcanvas__wrapper .offcanvas__content .offcanvas-btns .btn_wrapper .sign_up a {
+    font-size: 14px;
+    width: 84px;
+    height: 40px;
+  }
+}
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact {
-  margin-top: 20px;
+  margin-top: 25px;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact h4 {
-  color: #fff;
-  font-size: 30px;
+  color: #212529;
+  font-size: 26px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .offcanvas__wrapper .offcanvas__content .offcanvas__contact h4 {
+    font-size: 24px;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .offcanvas__wrapper .offcanvas__content .offcanvas__contact h4 {
+    font-size: 20px;
+  }
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul {
   margin-top: 20px;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul li {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   text-transform: capitalize;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul li a {
-  color: var(--common-white);
+  color: #0B2545;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul li a:hover {
-  color: var(--theme-color);
+  color: #FFC857;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul li:not(:last-child) {
   margin-bottom: 15px;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul li .offcanvas__contact-icon {
-  margin-right: 20px;
+  margin-right: 16px;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact ul li .offcanvas__contact-icon i {
-  color: var(--theme-color);
+  color: #0B2545;
 }
 .offcanvas__wrapper .offcanvas__content .offcanvas__contact span {
   text-transform: initial;

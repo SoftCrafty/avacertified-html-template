@@ -57,6 +57,10 @@
 			margin-bottom: 20px;
 		}
 
+		.offcanvas__top{
+			margin-bottom: 10px;
+		}
+
 		.theme-btn{
 			padding: 15px 28px;
 			margin-top: 40px;
@@ -80,7 +84,7 @@
 			button{
 				background-color: transparent;
 				border: none;
-				color: $white;
+				color: #0B2545;
 			}
 			position: relative;
 			z-index: 9;
@@ -97,24 +101,61 @@
 			}
 		}
 
+		.offcanvas-btns{
+			margin-top: 200px;
+
+			.btn_wrapper{
+				justify-content: start;
+
+				.sign_up{
+					display: block;
+	
+					a{
+						color: #0B2545;
+						background: #FFC857;
+						font-weight: 600;
+
+						&:hover{
+							background-color: #C2922E;
+						}
+
+						@include xxs{
+							font-size: 14px;
+							width: 84px;
+							height: 40px;
+						}
+					}
+				}
+			}
+		}
 		.offcanvas__contact {
-			margin-top: 20px;
+			margin-top: 25px;
+
+
 			h4{
-				color: #fff;
-				font-size: 30px;
+				color: #212529;
+				font-size: 26px;
+
+				@include sm{
+					font-size: 24px;
+				}
+
+				@include xxs{
+					font-size: 20px;
+				}
 			}
 			ul {
 				margin-top: 20px;
 
 				li {
 					font-size: 16px;
-					font-weight: 600;
+					font-weight: 500;
 					text-transform: capitalize;
 
 					a {
-						color: var(--common-white);
+						color: #0B2545;
 						&:hover{
-							color: var(--theme-color);
+							color: #FFC857;
 						}
 					}
 
@@ -123,10 +164,10 @@
 					}
 
 					.offcanvas__contact-icon {
-						margin-right: 20px;
+						margin-right: 16px;
 
 						i {
-							color: var( --theme-color);
+							color: #0B2545;
 						}
 					}
 				}

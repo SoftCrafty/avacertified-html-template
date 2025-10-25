@@ -275,7 +275,7 @@ header{
 			.offcanvas-bar{
 				background-color: transparent;
 				border: none;
-				@media (max-width:1199px){
+				@media (max-width:991px){
 					display: block !important;
 				}
 				span{
@@ -341,8 +341,16 @@ header{
 							-ms-transform: rotate(180deg);
 							-o-transform: rotate(180deg);
 						}
-					}
 
+						}
+						
+					}
+					&:last-child{
+						display: none;
+
+						@include md{
+							display: inline-block;
+						}
 					}
 					@include breakpoint(max-xxxl){
 						margin: 0 5px;
